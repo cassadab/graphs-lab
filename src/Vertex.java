@@ -1,9 +1,19 @@
 public class Vertex {
     private Color color;
-    private Vertex predecessor;
 
-    public Vertex(Color color, Vertex predecessor) {
+    public Vertex() {
+        this.color = Color.WHITE;
+    }
+
+    public Vertex(Color color) {
         this.color = color;
-        this.predecessor = predecessor;
+    }
+
+    public Color getColor() {
+        return color;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
     }
 }
