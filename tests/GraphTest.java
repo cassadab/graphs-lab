@@ -22,8 +22,8 @@ class GraphTest {
      *             1
      *            / \
      *          2    3
-     *         /
-     *        4
+     *           \  /
+     *            4
      */
     @Test
     void breadthFirst() {
@@ -41,6 +41,7 @@ class GraphTest {
         adj2.add(v4);
 
         Set<Vertex> adj3 = new HashSet<>();
+        adj3.add(v4);
         Set<Vertex> adj4 = new HashSet<>();
 
         g.addVertex(1, v1, adj1);
