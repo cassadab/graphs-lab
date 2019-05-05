@@ -70,4 +70,19 @@ public class Graph {
         vertexMap.put(key, v);
         edgesMap.put(v, adjacentVertices);
     }
+
+    public boolean containsVertex(int id) {
+        return vertexMap.get(id) != null;
+    }
+
+    public void addAdjacentVertex(int srcId, Vertex adjacentVertex) {
+        Vertex v = vertexMap.get(srcId);
+        Set<Vertex> edges = edgesMap.get(v);
+        edges.add(adjacentVertex);
+        edgesMap.put(v, edges);
+    }
+
+    public Vertex getVertex(int id) {
+        return vertexMap.get(id);
+    }
 }
