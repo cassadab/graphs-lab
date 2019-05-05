@@ -15,35 +15,55 @@ public class Graph {
     }
 
     public List<Vertex> breadthFirst(int source, int maxDistance) {
-        int distanceSoFar = 0;
         LinkedList<Vertex> searchQueue = new LinkedList<>();
         LinkedList<Vertex> verticesTouched = new LinkedList<>();
-        // mark all as unvisited
+        // mark all as unvisited and reset their depths from source
         for (Vertex v : vertexMap.values()) {
             v.setColor(Color.WHITE);
+            v.setDepth(0);
         }
 
         Vertex sourceVertex = vertexMap.get(source);
         sourceVertex.setColor(Color.GREY);
         searchQueue.offer(sourceVertex);
-        verticesTouched.add(sourceVertex);
 
-        while(searchQueue.peek() != null && distanceSoFar < maxDistance) {
-            distanceSoFar++;
+        while(searchQueue.peek() != null) {
             Vertex v = searchQueue.poll();
-
-            // visit all adjacent vertices
-            for( Vertex adjVertex : edgesMap.get(v)){
-                if (adjVertex.getColor() == Color.WHITE) {
-                    adjVertex.setColor(Color.GREY);
-                    searchQueue.offer(adjVertex);
-                    verticesTouched.add(adjVertex);
+            if (v.getDepth() <= maxDistance) {
+                // visit all adjacent vertices
+                verticesTouched.add(v);
+                for( Vertex adjVertex : edgesMap.get(v)){
+                    if (adjVertex.getColor() == Color.WHITE) {
+                        adjVertex.setDepth(v.getDepth() + 1);
+                        adjVertex.setColor(Color.GREY);
+                        searchQueue.offer(adjVertex);
+                    }
                 }
+                v.setColor(Color.BLACK);
             }
-            v.setColor(Color.BLACK);
         }
 
         return verticesTouched;
+    }
+
+    public Set<Edge> recommendFriends(int maxDistance) {
+        Set<Edge> edges = new HashSet<>();
+
+        List<Vertex> potentialFriends;
+        for(Vertex person : vertexMap.values()) {
+            potentialFriends = breadthFirst(person.getId(), maxDistance);
+
+            Set<Vertex> currentFriends = edgesMap.get(person);
+
+            for (Vertex potentialFriend : potentialFriends) {
+                if (!currentFriends.contains(potentialFriend) && person.getId() != potentialFriend.getId()) {
+                    edges.add(new Edge(person, potentialFriend));
+                    edges.add(new Edge(potentialFriend, person));
+                }
+            }
+        }
+
+        return edges;
     }
 
     public void addVertex(int key, Vertex v, Set<Vertex> adjacentVertices) {

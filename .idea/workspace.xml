@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1dd1f4e-108d-4f25-a4a7-d05af74664d3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Edge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vertex.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/GraphTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/GraphTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,8 +19,27 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Graph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="16" column="64" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
+            <state relative-caret-position="300">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Edge.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+              <folding>
+                <element signature="e#258#259#0" expanded="true" />
+                <element signature="e#292#293#0" expanded="true" />
+                <element signature="e#328#329#0" expanded="true" />
+                <element signature="e#360#361#0" expanded="true" />
+                <element signature="e#406#407#0" expanded="true" />
+                <element signature="e#486#487#0" expanded="true" />
+                <element signature="e#888#889#0" expanded="true" />
+                <element signature="e#947#948#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -24,11 +47,28 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/GraphTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+            <state relative-caret-position="354">
+              <caret line="92" column="22" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.5.0-M1/junit-platform-commons-1.5.0-M1.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="363" selection-start-line="363" selection-end-line="363" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.5.0-M1/junit-jupiter-api-5.5.0-M1.jar!/org/junit/jupiter/api/Assertions.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="249" selection-start-line="249" selection-end-line="249" />
               <folding>
-                <element signature="e#203#204#0" expanded="true" />
-                <element signature="e#240#241#0" expanded="true" />
+                <element signature="e#7978#7979#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,17 +95,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Vertex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+            <state relative-caret-position="442">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
-                <element signature="e#68#69#0" expanded="true" />
-                <element signature="e#107#108#0" expanded="true" />
                 <element signature="e#131#132#0" expanded="true" />
                 <element signature="e#165#166#0" expanded="true" />
                 <element signature="e#236#237#0" expanded="true" />
                 <element signature="e#264#265#0" expanded="true" />
                 <element signature="e#305#306#0" expanded="true" />
                 <element signature="e#339#340#0" expanded="true" />
+                <element signature="e#384#385#0" expanded="true" />
+                <element signature="e#409#410#0" expanded="true" />
+                <element signature="e#512#513#0" expanded="true" />
+                <element signature="e#585#586#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,6 +120,7 @@
       <list>
         <option value="Arquillian JUnit Test Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -89,6 +132,7 @@
       <list>
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Color.java" />
+        <option value="$PROJECT_DIR$/src/Edge.java" />
         <option value="$PROJECT_DIR$/src/Vertex.java" />
         <option value="$PROJECT_DIR$/src/Graph.java" />
         <option value="$PROJECT_DIR$/tests/GraphTest.java" />
@@ -133,7 +177,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557089166433" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557096593045" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -167,7 +211,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.GraphTest">
+    <configuration name="GraphTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="graphs-lab" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GraphTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GraphTest.breadthFirst" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="graphs-lab" />
       <option name="PACKAGE_NAME" value="" />
@@ -178,8 +231,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GraphTest.recommendFriends" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="graphs-lab" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GraphTest" />
+      <option name="METHOD_NAME" value="recommendFriends" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GraphTest" />
+        <item itemvalue="JUnit.GraphTest.recommendFriends" />
         <item itemvalue="JUnit.GraphTest.breadthFirst" />
       </list>
     </recent_temporary>
@@ -194,26 +259,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557083272083</updated>
-      <workItem from="1557083273503" duration="5143000" />
+      <workItem from="1557083273503" duration="11539000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GraphTest_breadthFirst - 2019.05.05 at 15h 35m 37s.xml">
+    <history-entry file="GraphTest_breadthFirst - 2019.05.05 at 17h 44m 22s.xml">
       <configuration name="GraphTest.breadthFirst" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GraphTest_breadthFirst - 2019.05.05 at 15h 38m 15s.xml">
+    <history-entry file="GraphTest_breadthFirst - 2019.05.05 at 17h 44m 31s.xml">
       <configuration name="GraphTest.breadthFirst" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GraphTest_breadthFirst - 2019.05.05 at 15h 38m 32s.xml">
+    <history-entry file="GraphTest_breadthFirst - 2019.05.05 at 17h 46m 18s.xml">
       <configuration name="GraphTest.breadthFirst" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GraphTest_breadthFirst - 2019.05.05 at 15h 40m 19s.xml">
+    <history-entry file="GraphTest_breadthFirst - 2019.05.05 at 17h 46m 38s.xml">
       <configuration name="GraphTest.breadthFirst" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GraphTest_breadthFirst - 2019.05.05 at 17h 46m 41s.xml">
+      <configuration name="GraphTest.breadthFirst" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GraphTest_breadthFirst - 2019.05.05 at 17h 47m 03s.xml">
+      <configuration name="GraphTest.breadthFirst" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GraphTest_recommendFriends - 2019.05.05 at 17h 47m 16s.xml">
+      <configuration name="GraphTest.recommendFriends" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GraphTest_recommendFriends - 2019.05.05 at 17h 47m 37s.xml">
+      <configuration name="GraphTest.recommendFriends" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GraphTest_recommendFriends - 2019.05.05 at 17h 47m 47s.xml">
+      <configuration name="GraphTest.recommendFriends" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GraphTest_recommendFriends - 2019.05.05 at 17h 49m 17s.xml">
+      <configuration name="GraphTest.recommendFriends" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5143000" />
+    <option name="totallyTimeSpent" value="11539000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -235,8 +318,8 @@
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18418202" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43770313" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.63380283" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -256,6 +339,18 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tests/GraphTest.java</url>
+          <line>69</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Color.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -273,36 +368,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Vertex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+        <state relative-caret-position="442">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
-            <element signature="e#68#69#0" expanded="true" />
-            <element signature="e#107#108#0" expanded="true" />
             <element signature="e#131#132#0" expanded="true" />
             <element signature="e#165#166#0" expanded="true" />
             <element signature="e#236#237#0" expanded="true" />
             <element signature="e#264#265#0" expanded="true" />
             <element signature="e#305#306#0" expanded="true" />
             <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#512#513#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Edge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+          <folding>
+            <element signature="e#258#259#0" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
+            <element signature="e#328#329#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#888#889#0" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.5.0-M1/junit-jupiter-api-5.5.0-M1.jar!/org/junit/jupiter/api/Assertions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="249" selection-start-line="249" selection-end-line="249" />
+          <folding>
+            <element signature="e#7978#7979#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.5.0-M1/junit-platform-commons-1.5.0-M1.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="363" selection-start-line="363" selection-end-line="363" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="16" column="64" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
+        <state relative-caret-position="300">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/GraphTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
-          <folding>
-            <element signature="e#203#204#0" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="354">
+          <caret line="92" column="22" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
         </state>
       </provider>
     </entry>
