@@ -1,0 +1,9 @@
+task_output_1 task_output_2 : dependency_1 dependency_2
+    rm webkinz-password.txt
+
+dependency_3 : task_output_1
+    cd definitely-not-facebook-private-user-data
+    
+dependency_2 : task_output_
+    mv scubadiving.mp4 hawaii-montage-video/
+
