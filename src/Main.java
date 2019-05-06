@@ -9,21 +9,11 @@ public class Main {
         Set<Edge> testEdges = parseTestingSet("testing_set.tsv");
         if (g != null) {
             Set<Edge> friendsDist2 = g.recommendFriends(2);
-            int commonEdges = 0;
-            for(Edge e : friendsDist2) {
-                if (testEdges.contains(e)) {
-                    commonEdges++;
-                }
-            }
-            System.out.println("Common Edges with Max Distance = 2: " + commonEdges);
-            Set<Edge> friendsDist4 = g.recommendFriends(4);
-            commonEdges = 0;
-            for(Edge e : friendsDist4) {
-                if (testEdges.contains(e)) {
-                    commonEdges++;
-                }
-            }
-            System.out.println("Common Edges with Max Distance = 4: " + commonEdges);
+            Set<Edge> friendsDist5 = g.recommendFriends(5);
+
+            testAnalysis(testEdges, friendsDist2, "Max Length = 2");
+            testAnalysis(testEdges, friendsDist5, "Max Length = 5");
+
         }
     }
 
@@ -84,5 +74,37 @@ public class Main {
             System.out.println("IOException: " + e.getMessage());
             return null;
         }
+    }
+
+    public static double calculatePrecision(int falsePositives, int truePositives) {
+        return((double)truePositives / ((double)truePositives + (double)falsePositives));
+    }
+
+    public static double calculateRecall(int truePositives, int falseNegatives) {
+        return((double) truePositives / (double)(truePositives + falseNegatives));
+    }
+
+    public static void testAnalysis(Set<Edge> testEdges, Set<Edge> predictedEdges, String testTitle) {
+        int truePositives = 0;
+        int falsePositives = 0;
+        int falseNegatives = 0;
+        for(Edge e : predictedEdges) {
+            if (testEdges.contains(e)) {
+                truePositives++;
+            } else {
+                falsePositives++;
+            }
+        }
+        for (Edge e : testEdges) {
+            if (!predictedEdges.contains(e)) {
+                falseNegatives++;
+            }
+        }
+//            falsePositives = friendsDist2.size() - truePositives;
+        System.out.println("\nTest Analysis for " + testTitle + ":");
+        System.out.println("True Positives for " + testTitle + " : " + truePositives);
+        System.out.println("False Positives for " + testTitle + ": " + falsePositives);
+        System.out.println("Precision: " + calculatePrecision(falsePositives, truePositives));
+        System.out.println("Recall: " + calculateRecall(truePositives, falseNegatives));
     }
 }
