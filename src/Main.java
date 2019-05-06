@@ -104,6 +104,7 @@ public class Main {
         System.out.println("\nTest Analysis for " + testTitle + ":");
         System.out.println("True Positives for " + testTitle + " : " + truePositives);
         System.out.println("False Positives for " + testTitle + ": " + falsePositives);
+        System.out.println("False Negatives for " + testTitle + ": " + falseNegatives);
         System.out.println("Precision: " + calculatePrecision(falsePositives, truePositives));
         System.out.println("Recall: " + calculateRecall(truePositives, falseNegatives));
     }
