@@ -1,4 +1,5 @@
 import Color
+import queue
 
 class Graph:
     pass
@@ -30,30 +31,34 @@ class Graph:
     # Does a depth-first traversal of the graph until it is finshed (returns False)
     # or has detected a cycle (returns True)
     def find_cycles(self):
+        top_list = queue.Queue()
         has_cycle = False
         for vertex in self.vertex_dict.values():
             vertex.color = Color.Color.white
         for vertex in self.vertex_dict.values():
             if vertex.color == Color.Color.white:
-                if self.visit(vertex):
+                if self.visit(vertex, top_list)[0]:
                     has_cycle = True
 
                 
-        return has_cycle
+        return (has_cycle, top_list)
 
     # Visits a node and will call itself until it has finished (returns False) or has detected
     # a circular dependency (returns True)
-    def visit(self, vertex):
+    def visit(self, vertex, top_list):
         vertex.color = Color.Color.grey
         adjacent_vertices = self.edge_dict[vertex.id]
         for adj_vertex in adjacent_vertices:
             if adj_vertex.color == Color.Color.white:
-                if self.visit(adj_vertex):
-                    return True
+                if self.visit(adj_vertex)[0]:
+                    return (True, None)
             elif adj_vertex.color == Color.Color.grey:
-                return True
+                return (True, None)
         vertex.color = Color.Color.black
-        return False
+        top_list.put(vertex)
+        return (False, top_list)
+
+    
 
 
     

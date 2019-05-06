@@ -38,7 +38,14 @@ file = open(file_name, "r")
 
 parse_makeflow(file)
 
-if g.find_cycles():
+result_tuple = g.find_cycles()
+
+if result_tuple[0]:
     print('Slow down big guy, you got a circular dependency...')
 else: 
     print('You good homie, happy coding!')
+
+print('\nHere is your topological list:\n')
+for i in range(result_tuple[1].qsize()):
+    print(result_tuple[1].get().id, end=" -> ")
+print('Done!')
