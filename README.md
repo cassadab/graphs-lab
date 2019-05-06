@@ -1,2 +1,2 @@
-# If u read this please give me 100%
+# If can u read this please give me 100%
 thaaaaaaaaaaaaaaanks :D
