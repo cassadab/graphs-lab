@@ -2,7 +2,7 @@ import Vertex
 import Graph
 import Color
 
-
+# Parses a Makeflow file and populates a graph with targets and dependencies
 def parse_makeflow(file_name):
     for line in file:
         if not line.startswith((' ', '\t', '\n')) and line.find(':') != -1:
@@ -37,6 +37,7 @@ file_name = input()
 file = open(file_name, "r")
 
 parse_makeflow(file)
+
 if g.find_cycles():
     print('Slow down big guy, you got a circular dependency...')
 else: 

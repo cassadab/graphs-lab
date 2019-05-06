@@ -3,14 +3,17 @@ import Color
 class Graph:
     pass
 
+    # Default contructor, initializes empty dictionaries
     def __init__(self) -> None:
         self.vertex_dict = {}
         self.edge_dict = {}
 
+    # Adds vertex to graph
     def add_vertex(self, key, vertex, adjacent_vert) -> None:
         self.vertex_dict[key] = vertex
         self.edge_dict[vertex.id] = adjacent_vert
 
+    # Checks if a vertex is in the graph given an id
     def contains_vertex(self, key):
         return (key in self.vertex_dict)
 
@@ -24,6 +27,8 @@ class Graph:
         print(self.vertex_dict)
         print(self.edge_dict)
 
+    # Does a depth-first traversal of the graph until it is finshed (returns False)
+    # or has detected a cycle (returns True)
     def find_cycles(self):
         has_cycle = False
         for vertex in self.vertex_dict.values():
@@ -36,6 +41,8 @@ class Graph:
                 
         return has_cycle
 
+    # Visits a node and will call itself until it has finished (returns False) or has detected
+    # a circular dependency (returns True)
     def visit(self, vertex):
         vertex.color = Color.Color.grey
         adjacent_vertices = self.edge_dict[vertex.id]

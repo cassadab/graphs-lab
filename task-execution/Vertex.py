@@ -1,3 +1,6 @@
+# Vertex Class
+# Holds an id that serves as a key and a color that is used
+# when traversing the graph
 class Vertex:
     pass
     
