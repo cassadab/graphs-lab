@@ -38,7 +38,7 @@ file = open(file_name, "r")
 
 parse_makeflow(file)
 
-result_tuple = g.find_cycles()
+result_tuple = g.topological_sort()
 
 if result_tuple[0]:
     print('Slow down big guy, you got a circular dependency...')

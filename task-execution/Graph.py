@@ -28,9 +28,10 @@ class Graph:
         print(self.vertex_dict)
         print(self.edge_dict)
 
-    # Does a depth-first traversal of the graph until it is finshed (returns False)
-    # or has detected a cycle (returns True)
-    def find_cycles(self):
+    # Does a depth-first traversal of the graph until it is finshed (returns a tuple of False and a topological list)
+    # or has detected a cycle (returns True and None)
+    # returns tuple of (HAS_CYCLE, TOPOLOGICAL_LIST)
+    def topological_sort(self):
         top_list = queue.Queue()
         has_cycle = False
         for vertex in self.vertex_dict.values():
@@ -43,8 +44,8 @@ class Graph:
                 
         return (has_cycle, top_list)
 
-    # Visits a node and will call itself until it has finished (returns False) or has detected
-    # a circular dependency (returns True)
+    # Visits a node and will call itself until it has finished (returns False, topological_list) or has detected
+    # a circular dependency (returns True, None)
     def visit(self, vertex, top_list):
         vertex.color = Color.Color.grey
         adjacent_vertices = self.edge_dict[vertex.id]
