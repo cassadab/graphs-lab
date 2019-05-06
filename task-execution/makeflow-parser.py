@@ -32,10 +32,12 @@ def parse_makeflow(file_name):
 
 g = Graph.Graph()
 
-# print("Enter the name of your file:")
-# file_name = input();
-file_name = 'demofile.txt'
+print("Enter the name of your file:")
+file_name = input();
 file = open(file_name, "r")
 
 parse_makeflow(file)
-print(g.find_cycles())
+if g.find_cycles():
+    print('Slow down big guy, you got a circular dependency...')
+else: 
+    print('You good homie, happy coding!')
