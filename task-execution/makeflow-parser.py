@@ -5,7 +5,7 @@ import Color
 
 def parse_makeflow(file_name):
     for line in file:
-        if not line.startswith((' ', '\t', '\n')):
+        if not line.startswith((' ', '\t', '\n')) and line.find(':') != -1:
             split_line = line.split(':')
             targets = split_line[0]
             targets = targets.split()
@@ -33,7 +33,7 @@ def parse_makeflow(file_name):
 g = Graph.Graph()
 
 print("Enter the name of your file:")
-file_name = input();
+file_name = input()
 file = open(file_name, "r")
 
 parse_makeflow(file)
